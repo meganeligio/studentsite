@@ -4,14 +4,18 @@ body { margin: 0; }
 
 /* GLOBAL COLORS */
 body { color: rgb(10, 10, 10); }
-a { color: rgba(175, 26, 26, 0.904); }
-a:hover { color: rgba(129, 0, 0, 0.89); }
+a { color: rgba(0, 0, 0, 0.904); }
+a:hover { color: rgba(196, 59, 93, 0.89); }
 
 /* GLOBAL TYPOGRAPHY */
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 80.75%; /* 14px */
+    font-family: Avenir Next, sans-serif;
+    font-size: 85.75%; /* 14px */
     line-height: 1.4;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
 }
 
 /* HEADER */
@@ -26,12 +30,12 @@ header {
 }
 
 header a {
-    color: rgba(255,255,255, .8);
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
 }
 
 header a:hover {
-    color: rgba(255,255,255, 1);
+    color: rgba(196, 59, 93, 0.89);
 }
 
 /* SITE ID */
@@ -82,7 +86,7 @@ footer {
 .hero {
     background-color: rgba(0, 102, 204, 1);
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 6em 1em;
 }
 
@@ -116,10 +120,32 @@ footer {
     text-align: center;
 }
 
-/* STYLING FOR SUB PAGES */
+/* CUSTOM STYLING FOR SPECIFIC & SUB PAGES */
 .page-sub .hero {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.8);
+    background-image: url('../img/cherryblossoms.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20vh 1em;
+    color: rgb(255, 255, 255);
+}
+
+.page-sub header {
+    background-color: rgba(255, 255, 255, 0.178);
+    position: absolute;
+    width: 100%;
+}
+
+.page-home .hero {
+    background-image: url('../img/cherryblossoms.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20vh 1em;
+}
+
+.page-home header {
+    background-color: rgba(255, 255, 255, 0.178);
+    position: absolute;
+    width: 100%;
 }
 
 /* COURSE PAGES */
