@@ -35,12 +35,17 @@ header a {
 }
 
 header a:hover {
-    color: rgb(117, 97, 97);
+    color: white;
+    text-decoration: underline;
 }
 
 /* SITE ID */
 .site-id h1 {
     margin: 0;
+}
+
+.site-id h1 a:hover {
+    text-decoration: none;
 }
 
 /* SITE NAV */
@@ -85,7 +90,7 @@ footer {
 }
 
 .social-nav a:hover {
-    color: rgb(117, 97, 97);
+    text-decoration: underline;
 }
 
 /* HERO SECTION */
@@ -166,6 +171,10 @@ footer {
     margin: 2em;
 }
 
+ul.a {
+    list-style-type: circle;
+}
+
 /* LAYOUT */
 .container {
     max-width: 1000px;
@@ -192,6 +201,10 @@ aside {
         padding: .3em 2em 0 0;
     }
 }
+
+/* NOTES PRIMARY */
+
+
 
 /* CODE BLOCKS */
 
