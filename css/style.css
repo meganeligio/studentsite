@@ -30,7 +30,7 @@ header {
 }
 
 header a {
-    color: rgba(255, 255, 255, 0.8);
+    color: white;
     text-decoration: none;
 }
 
@@ -201,10 +201,6 @@ aside {
         padding: .3em 2em 0 0;
     }
 }
-
-/* NOTES PRIMARY */
-
-
 
 /* CODE BLOCKS */
 
