@@ -449,7 +449,8 @@ section {
     }
 }
 
-/* Animated Toggle-Nav Menu */
+/* ANIMATED TOGGLE-MAV MENU */
+
 @media (max-width: 767px) {
     .toggle-nav.animated ul {
       display: block;
@@ -489,7 +490,29 @@ section {
     .toggle-nav.animated[data-navstate=open] li a {
       padding: 0.75em;
     }
-  }
+
+    .menu-button {
+        cursor: pointer;
+        display: flex;
+        background: transparent;
+        border-color: transparent;
+        font-size: inherit;
+        font-family: inherit;
+    }
+
+    .menu-button:after {
+        content: "\2630";
+        font-size: 1.5em;
+        transition: all 0.2s ease-out;
+    }
+
+    [data-navstate="open"]
+    .menu-button:after {
+    content: "\2715";
+    transform: rotate(-90deg);
+    }
+
+}
 
 /* NAVICON */
 
@@ -510,6 +533,7 @@ section {
 
 .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
     content: "\2715";
+    font-size: 1.5em;
 }
 
 /* SUB PAGES */

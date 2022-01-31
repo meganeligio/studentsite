@@ -36,10 +36,11 @@ header a {
 
 header a:hover {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* SITE ID */
+
 .site-id h1 {
     margin: 0;
 }
@@ -49,6 +50,7 @@ header a:hover {
 }
 
 /* SITE NAV */
+
 .site-nav ul {
     display: flex;
     justify-content: flex-end;
@@ -63,18 +65,21 @@ header a:hover {
 }
 
 /* MAIN */
+
 main {
     background: rgba(172, 27, 27, 0.05);
 }
 
 /* FOOTER */
+
 footer {
-    border-top: 1px solid rgba(37, 37, 37, 0.05);
+    /* border-top: 1px solid rgba(37, 37, 37, 0.05); */
     padding: 1em;
-    background: rgb(199, 135, 135);
+    background: rgba(172, 27, 27, 0.05);
 }
 
 /* SOCIAL NAV */
+
 .social-nav ul {
     margin: 0;
     padding: 0;
@@ -84,16 +89,19 @@ footer {
 }
 
 .social-nav a {
+    font-size: 81.3%;
     display: block;
     padding: 1em;
-    color: white;
+    color: black;
 }
 
 .social-nav a:hover {
-    text-decoration: underline;
+    color: rgba(199, 135, 135);
+    text-decoration: none;
 }
 
 /* HERO SECTION */
+
 .hero {
     background-color: rgba(0, 102, 204, 1);
     text-align: center;
@@ -115,6 +123,7 @@ footer {
 }
 
 /* COURSES SECTION */
+
 .courses {
     padding: 5em 1em;
     display: grid;
@@ -132,6 +141,7 @@ footer {
 }
 
 /* CUSTOM STYLING FOR SPECIFIC & SUB PAGES */
+
 .page-sub .hero {
     background-image: url('../img/flowers.jpg');
     background-size: cover;
@@ -160,6 +170,7 @@ footer {
 }
 
 /* COURSE PAGES */
+
 .coursework {
     padding: 3em 1em;
     display: flex;
@@ -176,6 +187,7 @@ ul.a {
 }
 
 /* LAYOUT */
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -186,6 +198,7 @@ section {
 }
 
 /* SIDEBAR/ASIDE */
+
 aside {
     padding: 2em 0;
 }
@@ -223,6 +236,7 @@ pre code {
 }
 
 /* DEFINITION LISTS */
+
 dt {
     font-weight: bold;
     margin-top: 1em;
