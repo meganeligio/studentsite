@@ -383,7 +383,7 @@ section {
 .hero {
     background: #ddd;
     border-top: none;
-    padding: 4em 1em 5em 1em;
+    padding: 4em 1em 3em 1em;
     margin-bottom: 1.5em;
 }
 
@@ -476,8 +476,6 @@ article {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 11em;
-    margin-top: 8em;
 }
 
 article h1,
@@ -524,7 +522,7 @@ article p:first-of-type:first-letter {
     background: rgba(199, 135, 135);
     color: #fff;
     padding: .2em .4em;
-    margin-right: .2em;
+    margin-right: .3em;
     float: left;
 }
 
@@ -533,8 +531,6 @@ article p:first-of-type:first-letter {
 form {
     max-width: 600px;
     margin: 2em auto;
-    margin-top: 5em;
-    margin-bottom: 5em;
 }
 
 form label,

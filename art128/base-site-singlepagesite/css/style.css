@@ -383,7 +383,7 @@ section {
 .hero {
     background: #ddd;
     border-top: none;
-    padding: 4em 1em 5em 1em;
+    padding: 4em 1em 3em 1em;
     margin-bottom: 1.5em;
 }
 
@@ -449,6 +449,48 @@ section {
     }
 }
 
+/* Animated Toggle-Nav Menu */
+@media (max-width: 767px) {
+    .toggle-nav.animated ul {
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      padding: 0;
+      border-width: 0;
+      transition: all 0.3s ease;
+    }
+  
+    .toggle-nav.animated[data-navstate=open] ul {
+      max-height: 138em;
+      opacity: 1;
+      padding: 0.5em 0;
+      border-width: 0px;
+      transition: all 0.6s ease;
+    }
+  
+    .toggle-nav.animated li {
+      padding: 0;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+  
+    .toggle-nav.animated[data-navstate=open] li {
+      padding: 0.25em;
+      opacity: 1;
+      transition: all 0.6s ease 0.2s;
+    }
+  
+    .toggle-nav.animated li a {
+      padding: 0;
+      transition: all 0.3s ease;
+    }
+  
+    .toggle-nav.animated[data-navstate=open] li a {
+      padding: 0.75em;
+    }
+  }
+
 /* NAVICON */
 
 .toggle-nav .site-nav .menu-button.navicon {
@@ -476,8 +518,6 @@ article {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 11em;
-    margin-top: 8em;
 }
 
 article h1,
@@ -524,7 +564,7 @@ article p:first-of-type:first-letter {
     background: rgba(199, 135, 135);
     color: #fff;
     padding: .2em .4em;
-    margin-right: .2em;
+    margin-right: .3em;
     float: left;
 }
 
@@ -533,8 +573,6 @@ article p:first-of-type:first-letter {
 form {
     max-width: 600px;
     margin: 2em auto;
-    margin-top: 5em;
-    margin-bottom: 5em;
 }
 
 form label,
@@ -566,4 +604,49 @@ form textarea {
 form input[type="submit"] {
     margin-top: 1.5em;
     width: auto;
+}
+
+/* CUSTOM SITE CSS */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    margin: .5em auto;
+    border-bottom: 3px solid rgba(0, 0, 0, .2);
+}
+
+.site-header.sticky {
+    position: fixed;
+    width: 100%;
+}
+
+.site-header.sticky + main {
+    padding-top: 3em;
+}
+
+#about {
+    background: rgba(0, 0, 0, .05);
+}
+
+#contact {
+    background: rgba(0, 0, 0, .1);
+}
+
+.site-header {
+    background: white;
+    padding-bottom: .4em;
+}
+
+/* VERTICAL MEDIA QUERY */
+
+@media (min-height: 600px) {
+    #contact {
+        padding-bottom: 20em;
+    }
 }
