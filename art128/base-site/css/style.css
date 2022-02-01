@@ -144,8 +144,8 @@ img {
 button {
     font-size: inherit;
     line-height: 1;
-    background-color: rgba(218, 158, 158);
-    border: 1px solid rgba(218, 158, 158);
+    background-color: rgb(190, 160, 146);
+    border: 1px solid rgb(190, 160, 146);
     color: rgba(255, 255, 255, 1);
     padding: 1em;
     display: inline-block;
@@ -156,19 +156,19 @@ button {
 
 .button:hover,
 button:hover {
-    background-color: rgba(199, 135, 135);
-    border-color: rgba(199, 135, 135);
+    background-color: rgb(172, 140, 125);
+    border-color: rgb(172, 140, 125);
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
 
 .button.alt {
     background-color: transparent;
-    color: rgba(199, 135, 135);
+    color: rgb(172, 140, 125);
 }
 
 .button.alt:hover {
-    background-color: rgba(199, 135, 135);
+    background-color: rgb(172, 140, 125);
     color: rgba(255, 255, 255, 1);
 }
 
@@ -321,7 +321,7 @@ body.demo::before {
 
 .site-header a:hover,
 .site-footer a:hover {
-    color: rgba(199, 135, 135);
+    color: rgba(172, 140, 125);
     text-decoration: none;
 }
 

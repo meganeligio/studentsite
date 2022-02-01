@@ -216,7 +216,7 @@ body.demo {
 
 body.demo::before {
     content: "small (MOBILE) less than 768px";
-    background-color: rgba(240, 188, 188);
+    background-color: rgb(223, 185, 168);
     width: 100%;
     position: fixed;
     top: 0;
@@ -227,21 +227,21 @@ body.demo::before {
 
 @media (min-width: 768px) {
     body.demo::before {
-        background-color: rgba(231, 176, 176);
+        background-color: rgb(206, 171, 156);
         content: "midsize (TABLET) screen 768px - 1050px";
     }
 }
 
 @media (min-width: 1050px) {
     body.demo::before {
-        background-color: rgba(223, 163, 163);
+        background-color: rgb(192, 160, 145);
         content: "large (NOTEBOOK) screen 1050px - 1250px";
     }
 }
 
 @media (min-width: 1250px) {
     body.demo::before {
-        background-color: rgba(199, 135, 135);
+        background-color: rgb(172, 140, 125);
         content: " extra large (DESKTOP) screen 1250px +";
     }
 }

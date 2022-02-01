@@ -84,12 +84,12 @@ p {
 /* LINKS */
 
 a {
-    color: rgba(199, 135, 135);
+    color: rgb(172, 140, 125);
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(158, 96, 96);
+    color: rgb(143, 110, 94);
     text-decoration: underline;
 }
 
@@ -108,7 +108,7 @@ blockquote {
     display: block;
     opacity: 0.8;
     font-size: 0.875em;
-    color:rgba(199, 135, 135);
+    color:rgb(172, 140, 125);
   }
   
   blockquote cite:before {
@@ -144,8 +144,8 @@ img {
 button {
     font-size: inherit;
     line-height: 1;
-    background-color: rgb(218, 158, 158);
-    border: 1px solid rgba(218, 158, 158);
+    background-color: rgb(190, 160, 146);
+    border: 1px solid rgb(190, 160, 146);
     color: rgba(255, 255, 255, 1);
     padding: 1em;
     display: inline-block;
@@ -156,18 +156,18 @@ button {
 
 .button:hover,
 button:hover {
-    background-color: rgb(199, 135, 135);
-    border-color: rgb(199, 135, 135);
+    background-color: rgb(172, 140, 125);
+    border-color: rgb(172, 140, 125);
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
 
 .button.alt {
     background-color: transparent;
-    color: rgba(199, 135, 135);
+    color: rgb(172, 140, 125);
 }
 
 .button.alt:hover {
-    background-color: rgb(199, 135, 135);
-    color: rgba(255, 255, 255, 1);
+    background-color: rgb(172, 140, 125);
+    color: rgb(255, 255, 255, 1);
 }

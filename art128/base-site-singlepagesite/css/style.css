@@ -108,7 +108,7 @@ blockquote {
     display: block;
     opacity: 0.8;
     font-size: 0.875em;
-    color:rgba(199, 135, 135);
+    color:rgb(172, 140, 125);
   }
   
   blockquote cite:before {
@@ -151,8 +151,8 @@ button,
 form input[type="submit"] {
     font-size: inherit;
     line-height: 1;
-    background-color: rgba(218, 158, 158);
-    border: 1px solid rgba(218, 158, 158);
+    background-color: rgb(190, 160, 146);
+    border: 1px solid rgb(190, 160, 146);
     color: rgba(255, 255, 255, 1);
     padding: 1em;
     display: inline-block;
@@ -164,19 +164,19 @@ form input[type="submit"] {
 .button:hover,
 button:hover,
 form input[type="submit"]:hover {
-    background-color: rgba(199, 135, 135);
-    border-color: rgba(199, 135, 135);
+    background-color: rgb(172, 140, 125);
+    border-color: rgb(172, 140, 125);
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
 
 .button.alt {
     background-color: transparent;
-    color: rgba(199, 135, 135);
+    color: rgb(172, 140, 125);
 }
 
 .button.alt:hover {
-    background-color: rgba(199, 135, 135);
+    background-color: rgb(172, 140, 125);
     color: rgba(255, 255, 255, 1);
 }
 
@@ -249,7 +249,7 @@ body.demo::before {
 
 @media (min-width: 1250px) {
     body.demo::before {
-        background-color: rgba(199, 135, 135);
+        background-color: rgb(199, 135, 135);
         content: "extra large (DESKTOP) screen 1250px +";
     }
 }
@@ -329,7 +329,7 @@ body.demo::before {
 
 .site-header a:hover,
 .site-footer a:hover {
-    color: rgba(199, 135, 135);
+    color: rgb(172, 140, 125);
     text-decoration: none;
 }
 
@@ -434,7 +434,7 @@ section {
     }
 
     .toggle-nav .site-nav a:hover {
-        background-color: rgba(199, 135, 135);
+        background-color: rgb(172, 140, 125);
         color: white;
     }
 
@@ -585,10 +585,10 @@ article p:first-of-type {
 article p:first-of-type:first-letter {
     font-size: 3em;
     line-height: 1em;
-    background: rgba(199, 135, 135);
+    background: rgb(172, 140, 125);
     color: #fff;
     padding: .2em .4em;
-    margin-right: .3em;
+    margin-right: .2em;
     float: left;
 }
 

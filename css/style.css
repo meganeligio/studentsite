@@ -5,7 +5,7 @@ body { margin: 0; }
 /* GLOBAL COLORS */
 body { color: rgb(10, 10, 10); }
 a { color: rgba(0, 0, 0, 0.904); }
-a:hover { color: rgb(199, 135, 135); }
+a:hover { color: rgb(172, 140, 125); }
 
 /* GLOBAL TYPOGRAPHY */
 body {
@@ -75,7 +75,7 @@ main {
 footer {
     /* border-top: 1px solid rgba(37, 37, 37, 0.05); */
     padding: 1em;
-    background: rgba(172, 27, 27, 0.05);
+    background: rgb(172, 140, 125);
 }
 
 /* SOCIAL NAV */
@@ -89,14 +89,14 @@ footer {
 }
 
 .social-nav a {
-    font-size: 81.3%;
+    font-size: 85%;
     display: block;
     padding: 1em;
-    color: black;
+    color: white;
 }
 
 .social-nav a:hover {
-    color: rgba(199, 135, 135);
+    color: white;
     text-decoration: none;
 }
 
@@ -143,7 +143,7 @@ footer {
 /* CUSTOM STYLING FOR SPECIFIC & SUB PAGES */
 
 .page-sub .hero {
-    background-image: url('../img/flowers.jpg');
+    background-image: url('../img/beach.jpg');
     background-size: cover;
     background-position: center;
     padding: 20vh 1em;
@@ -151,22 +151,30 @@ footer {
 }
 
 .page-sub header {
-    background-color: rgba(255, 255, 255, 0.178);
+    background-color: transparent;
     position: absolute;
     width: 100%;
 }
 
 .page-home .hero {
-    background-image: url('../img/flowers.jpg');
+    background-image: url('../img/beach.jpg');
     background-size: cover;
     background-position: center;
     padding: 30vh 1em;
 }
 
 .page-home header {
-    background-color: rgba(255, 255, 255, 0.178);
+    background-color: transparent;
     position: absolute;
     width: 100%;
+}
+
+ul.a {
+    list-style-type: circle;
+}
+
+ul.b {
+    list-style: none;
 }
 
 /* COURSE PAGES */
@@ -180,10 +188,6 @@ footer {
 
 .project {
     margin: 2em;
-}
-
-ul.a {
-    list-style-type: circle;
 }
 
 /* LAYOUT */
