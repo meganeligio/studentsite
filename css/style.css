@@ -89,15 +89,72 @@ footer {
 }
 
 .social-nav a {
-    font-size: 85%;
+    font-size: 80%;
     display: block;
-    padding: 1em;
+    padding: 1em 2em;
     color: white;
 }
 
 .social-nav a:hover {
     color: white;
     text-decoration: none;
+}
+
+/* STRIKETHROUGH [creds: codepen.io/tsimenis */
+
+span {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+  
+ul.strike {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.strike {
+    display: inline-block;
+    padding: 0 .9em;
+}
+
+span {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+span:before, span:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #fff;
+}
+
+span:before {
+    left: -0.5px;
+}
+
+span:after {
+    right: 0.5px;
+    background: #fff;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:before {
+    background: #fff;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
 }
 
 /* HERO SECTION */
@@ -169,14 +226,6 @@ footer {
     width: 100%;
 }
 
-ul.a {
-    list-style-type: circle;
-}
-
-ul.b {
-    list-style: none;
-}
-
 /* COURSE PAGES */
 
 .coursework {
@@ -188,6 +237,22 @@ ul.b {
 
 .project {
     margin: 2em;
+}
+
+ul.a {
+    list-style: none;
+}
+
+ul.b {
+    list-style: none;
+}
+
+li.a::before {
+    margin-right: .35em;
+    margin-left: -2em;
+    padding: .03em .2em .10em .10em;
+    display: inline-block;
+    content: '🐾';
 }
 
 /* LAYOUT */

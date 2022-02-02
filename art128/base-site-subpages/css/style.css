@@ -520,10 +520,10 @@ article p:first-of-type {
 
 article p:first-of-type:first-letter {
     font-size: 3em;
-    line-height: 1em;
+    line-height: 1;
     background: rgb(172, 140, 125);
     color: #fff;
-    padding: .2em .4em;
+    padding: .225em .4em .125em .4em;
     margin-right: .2em;
     float: left;
 }
