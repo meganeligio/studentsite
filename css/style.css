@@ -8,6 +8,18 @@ a { color: rgba(0, 0, 0, 0.904); }
 a:hover { color: rgb(172, 140, 125); }
 
 /* GLOBAL TYPOGRAPHY */
+
+/* REFERENCE
+        62.5% => 10px
+        68.8% => 11px
+        75% => 12px
+        81.3% => 13px
+        87.5% => 14px
+        100% => 16px
+        112.5% => 18px
+        125% => 20px
+ */
+
 body {
     font-family: Avenir Next, sans-serif;
     font-size: 85.75%; /* 14px */
@@ -73,7 +85,7 @@ main {
 /* FOOTER */
 
 footer {
-    /* border-top: 1px solid rgba(37, 37, 37, 0.05); */
+    border-top: 1px solid rgba(37, 37, 37, 0.05);
     padding: 1em;
     background: rgb(172, 140, 125);
 }
@@ -91,70 +103,13 @@ footer {
 .social-nav a {
     font-size: 80%;
     display: block;
-    padding: 1em 2em;
+    padding: .3em .8em .3em .8em;
     color: white;
 }
 
 .social-nav a:hover {
     color: white;
     text-decoration: none;
-}
-
-/* STRIKETHROUGH [creds: codepen.io/tsimenis */
-
-span {
-    position: relative;
-    display: block;
-    cursor: pointer;
-}
-  
-ul.strike {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-li.strike {
-    display: inline-block;
-    padding: 0 .9em;
-}
-
-span {
-    position: relative;
-    display: block;
-    cursor: pointer;
-}
-
-span:before, span:after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 1px;
-    top: 50%;
-    margin-top: -0.5px;
-    background: #fff;
-}
-
-span:before {
-    left: -0.5px;
-}
-
-span:after {
-    right: 0.5px;
-    background: #fff;
-    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-span:hover:before {
-    background: #fff;
-    width: 100%;
-    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-span:hover:after {
-    background: transparent;
-    width: 100%;
-    transition: 0s;
 }
 
 /* HERO SECTION */
@@ -197,7 +152,7 @@ span:hover:after {
     text-align: center;
 }
 
-/* CUSTOM STYLING FOR SPECIFIC & SUB PAGES */
+/* CUSTOM STYLING */
 
 .page-sub .hero {
     background-image: url('../img/beach.jpg');
@@ -226,6 +181,105 @@ span:hover:after {
     width: 100%;
 }
 
+/* SHINE HOVER EFFECTS */
+
+.shine li {
+    font-weight: bold;
+    font-size: medium;
+    background-color: rgba(255, 255, 255, 0.644);
+    background-image: linear-gradient(
+        -75deg,
+        transparent 0,
+        transparent 5%,
+        white 5%,
+        white 10%,
+        transparent 10%,
+        transparent 100%
+        );
+    background-size: 200% 100%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition: 1.2s;
+}
+
+.shine li:hover {
+    background-position: -120% 0;
+}
+
+@keyframes shine {
+    from { -webkit-mask-position: 100%; }
+    to { -webkit-mask-position: -50%; }
+}
+
+/* STRIKETHROUGH [creds: codepen.io/tsimenis] */
+
+.strike {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.strike li {
+    display: inline-block;
+    padding: 0 .9em;
+}
+
+.strike span {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.strike span:before, span:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #fff;
+}
+
+.strike span:before {
+    left: -0.5px;
+}
+
+.strike span:after {
+    right: 0.5px;
+    background: #fff;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.strike span:hover:before {
+    background: #fff;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.strike span:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
+
+/* CUSTOM LIST STYLES */
+
+.emoji li {
+    list-style: none;
+}
+
+.emoji li::before {
+    margin-right: .35em;
+    margin-left: -2em;
+    padding: .02em .2em .18em .10em;
+    display: inline-block;
+    content: '🐾';
+}
+
+ul.a {
+    list-style: none;
+}
+
 /* COURSE PAGES */
 
 .coursework {
@@ -237,22 +291,6 @@ span:hover:after {
 
 .project {
     margin: 2em;
-}
-
-ul.a {
-    list-style: none;
-}
-
-ul.b {
-    list-style: none;
-}
-
-li.a::before {
-    margin-right: .35em;
-    margin-left: -2em;
-    padding: .03em .2em .10em .10em;
-    display: inline-block;
-    content: '🐾';
 }
 
 /* LAYOUT */
