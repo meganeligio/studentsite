@@ -300,7 +300,7 @@ footer {
 }
 
 .courses h3,
-.coursework h3,
+.project h3,
 .two-col-sidebar h3 {
     font-family: 'LEMON MILK';
     font-size: 87.5%;
@@ -326,13 +326,13 @@ footer {
     font-family: 'LEMON MILK';
     font-weight: bold;
     font-size: medium;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.664);
     background-image: linear-gradient(
         -75deg,
         transparent 0,
         transparent 5%,
-        black 5%,
-        black 10%,
+        white 5%,
+        white 10%,
         transparent 10%,
         transparent 100%
         );
@@ -361,7 +361,7 @@ footer {
     content: '✧';
     margin-right: .35em;
     margin-left: -2em;
-    padding: .02em .2em .18em .10em;
+    padding: .2em .2em .15em .15em;
     display: inline-block;
 }
 
