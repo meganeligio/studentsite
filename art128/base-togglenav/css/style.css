@@ -84,12 +84,12 @@ p {
 /* LINKS */
 
 a {
-    color: rgba(199, 135, 135);
+    color: #896052;
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(158, 96, 96);
+    color: #6F4C44;
     text-decoration: underline;
 }
 
@@ -108,7 +108,7 @@ blockquote {
     display: block;
     opacity: 0.8;
     font-size: 0.875em;
-    color:rgb(172, 140, 125);
+    color:#896052;
   }
   
   blockquote cite:before {
@@ -144,8 +144,8 @@ img {
 button {
     font-size: inherit;
     line-height: 1;
-    background-color: rgb(190, 160, 146);
-    border: 1px solid rgb(190, 160, 146);
+    background-color: #896052;
+    border: 1px solid #896052;
     color: rgba(255, 255, 255, 1);
     padding: 1em;
     display: inline-block;
@@ -156,19 +156,19 @@ button {
 
 .button:hover,
 button:hover {
-    background-color: rgb(172, 140, 125);
-    border-color: rgb(172, 140, 125);
+    background-color: #6F4C44;
+    border-color: #6F4C44;
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
 
 .button.alt {
     background-color: transparent;
-    color: rgb(172, 140, 125);
+    color: #896052;
 }
 
 .button.alt:hover {
-    background-color: rgb(172, 140, 125);
+    background-color: #6F4C44;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -321,7 +321,7 @@ body.demo::before {
 
 .site-header a:hover,
 .site-footer a:hover {
-    color: rgb(172, 140, 125);
+    color: #896052;
     text-decoration: none;
 }
 
@@ -385,10 +385,10 @@ section {
     }
 
 
-    .toggle-nav .site-nav .menu-button {
-        display: block;
+    .toggle-nav .menu-button {
         display: inline-block;
-        cursor: pointer;
+        background-color: transparent;
+        border: none;
         padding: .3em .8em;
         margin-bottom: .8em;
         border: 1px solid black;
@@ -404,7 +404,7 @@ section {
     }
 
     .toggle-nav .site-nav a:hover {
-        background-color: rgb(172, 140, 125);
+        background-color: #896052;
         color: white;
     }
 
