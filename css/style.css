@@ -312,8 +312,20 @@ footer {
 
 @font-face {
     font-family: 'LEMON MILK';
-    src: url(fonts/lemon-milk/LEMONMILK_Medium.otf);
+    src: url('../fonts/LEMONMILK-Medium.eot');
+    src: url('../fonts/LEMONMILK-Medium.eot?#iefix')
+            format('embedded-opentype')
+         url('../fonts/LEMONMILK-Medium.woff2')
+            format('woff2')
+         url('../fonts/LEMONMILK-Medium.woff')
+            format('woff')
+         url('../fonts/LEMONMILK-Medium.ttf')
+            format('truetype')
+         url('../fonts/LEMONMILK-Medium.svg#svgFontName')
+            format('svg');
+    font-weight: 400;
     font-style: normal;
+    font-display: auto;
 }
 
 .hero h2 {
@@ -380,7 +392,7 @@ footer {
 }
 
 .emoji li::before {
-    content: '✿';
+    content: '\21BA';
     margin-right: .35em;
     margin-left: -2em;
     padding: .2em .2em .15em .15em;
