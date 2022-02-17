@@ -34,47 +34,6 @@ a, a:hover, a:focus, a:active {
     text-decoration: none;
 }
 
-/* CUSTOM FONT STYLING */
-
-@font-face {
-    font-family: 'LEMON MILK';
-    src: url('LEMONMILK-Medium.eot');
-    src: url('LEMONMILK-Medium.eot?#iefix') format('embedded-opentype'),
-        url('LEMONMILK-Medium.woff2') format('woff2'),
-        url('LEMONMILK-Medium.woff') format('woff'),
-        url('LEMONMILK-Medium.ttf') format('truetype'),
-        url('LEMONMILK-Medium.svg#LEMONMILK-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-.hero h2 {
-    font-family: LEMON MILK, Avenir Next;
-    font-size: 4.5em;
-}
-
-.courses h3,
-.project h3,
-.two-col-sidebar h3 {
-    font-family: LEMON MILK, Avenir Next;
-    font-size: 87.5%;
-}
-
-.primary h2 {
-    font-family: LEMON MILK, Avenir Next;
-}
-
-.markup-box h2 {
-    font-family: Avenir Next, sans-serif;
-    font-size: 1.5em
-}
-
-.markup-box h3 {
-    font-family: Avenir Next, sans-serif;
-    font-size: 1.17em;
-}
-
 /* HEADER */
 
 header {
@@ -350,13 +309,53 @@ footer {
     left: 50%;
 }
 
+/* CUSTOM FONT STYLING */
+
+@font-face {
+    font-family: 'LEMON MILK';
+    src: url('../fonts/LEMONMILK-Bold.eot');
+    src: url('../fonts/LEMONMILK-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LEMONMILK-Bold.woff2') format('woff2'),
+        url('../fonts/LEMONMILK-Bold.woff') format('woff'),
+        url('../fonts/LEMONMILK-Bold.ttf') format('truetype'),
+        url('../fonts/LEMONMILK-Bold.svg#LEMONMILK-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.hero h2 {
+    font-family: LEMON MILK, Avenir Next;
+    font-size: 4.5em;
+}
+
+.courses h3,
+.project h3,
+.two-col-sidebar h3 {
+    font-family: LEMON MILK, Avenir Next;
+    font-size: 87.5%;
+}
+
+.primary h2 {
+    font-family: LEMON MILK, Avenir Next;
+}
+
+.markup-box h2 {
+    font-family: Avenir Next, sans-serif;
+    font-size: 1.5em
+}
+
+.markup-box h3 {
+    font-family: Avenir Next, sans-serif;
+    font-size: 1.17em;
+}
+
 /* SHINE HOVER EFFECTS */
 
 .shine li {
     font-family: LEMON MILK, Avenir Next;
-    font-weight: bold;
     font-size: medium;
-    background-color: rgba(255, 255, 255, 0.548);
+    background-color: rgba(255, 255, 255, 0.562);
     background-image: linear-gradient(
         -75deg,
         transparent 0,
