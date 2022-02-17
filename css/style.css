@@ -312,36 +312,31 @@ footer {
 
 @font-face {
     font-family: 'LEMON MILK';
-    src: url('../fonts/LEMONMILK-Medium.eot');
-    src: url('../fonts/LEMONMILK-Medium.eot?#iefix')
-            format('embedded-opentype')
-         url('../fonts/LEMONMILK-Medium.woff2')
-            format('woff2')
-         url('../fonts/LEMONMILK-Medium.woff')
-            format('woff')
-         url('../fonts/LEMONMILK-Medium.ttf')
-            format('truetype')
-         url('../fonts/LEMONMILK-Medium.svg#svgFontName')
-            format('svg');
-    font-weight: 400;
+    src: url('LEMONMILK-Medium.eot');
+    src: url('LEMONMILK-Medium.eot?#iefix') format('embedded-opentype'),
+        url('LEMONMILK-Medium.woff2') format('woff2'),
+        url('LEMONMILK-Medium.woff') format('woff'),
+        url('LEMONMILK-Medium.ttf') format('truetype'),
+        url('LEMONMILK-Medium.svg#LEMONMILK-Medium') format('svg');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 .hero h2 {
-    font-family: 'LEMON MILK', Avenir Next;
+    font-family: LEMON MILK, Avenir Next;
     font-size: 4.5em;
 }
 
 .courses h3,
 .project h3,
 .two-col-sidebar h3 {
-    font-family: 'LEMON MILK', Avenir Next;
+    font-family: LEMON MILK, Avenir Next;
     font-size: 87.5%;
 }
 
 .primary h2 {
-    font-family: 'LEMON MILK', Avenir Next;
+    font-family: LEMON MILK, Avenir Next;
 }
 
 .markup-box h2 {
@@ -357,7 +352,7 @@ footer {
 /* SHINE HOVER EFFECTS */
 
 .shine li {
-    font-family: 'LEMON MILK';
+    font-family: LEMON MILK;
     font-weight: bold;
     font-size: medium;
     background-color: rgba(255, 255, 255, 0.548);
