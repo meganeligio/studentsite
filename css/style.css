@@ -34,6 +34,47 @@ a, a:hover, a:focus, a:active {
     text-decoration: none;
 }
 
+/* CUSTOM FONT STYLING */
+
+@font-face {
+    font-family: 'LEMON MILK';
+    src: url('LEMONMILK-Medium.eot');
+    src: url('LEMONMILK-Medium.eot?#iefix') format('embedded-opentype'),
+        url('LEMONMILK-Medium.woff2') format('woff2'),
+        url('LEMONMILK-Medium.woff') format('woff'),
+        url('LEMONMILK-Medium.ttf') format('truetype'),
+        url('LEMONMILK-Medium.svg#LEMONMILK-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.hero h2 {
+    font-family: LEMON MILK, Avenir Next;
+    font-size: 4.5em;
+}
+
+.courses h3,
+.project h3,
+.two-col-sidebar h3 {
+    font-family: LEMON MILK, Avenir Next;
+    font-size: 87.5%;
+}
+
+.primary h2 {
+    font-family: LEMON MILK, Avenir Next;
+}
+
+.markup-box h2 {
+    font-family: Avenir Next, sans-serif;
+    font-size: 1.5em
+}
+
+.markup-box h3 {
+    font-family: Avenir Next, sans-serif;
+    font-size: 1.17em;
+}
+
 /* HEADER */
 
 header {
@@ -307,47 +348,6 @@ footer {
 
 .icons li:hover::after {
     left: 50%;
-}
-
-/* CUSTOM FONT STYLING */
-
-@font-face {
-    font-family: 'LEMON MILK';
-    src: url('LEMONMILK-Medium.eot');
-    src: url('LEMONMILK-Medium.eot?#iefix') format('embedded-opentype'),
-        url('LEMONMILK-Medium.woff2') format('woff2'),
-        url('LEMONMILK-Medium.woff') format('woff'),
-        url('LEMONMILK-Medium.ttf') format('truetype'),
-        url('LEMONMILK-Medium.svg#LEMONMILK-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-.hero h2 {
-    font-family: LEMON MILK, Avenir Next;
-    font-size: 4.5em;
-}
-
-.courses h3,
-.project h3,
-.two-col-sidebar h3 {
-    font-family: LEMON MILK, Avenir Next;
-    font-size: 87.5%;
-}
-
-.primary h2 {
-    font-family: LEMON MILK, Avenir Next;
-}
-
-.markup-box h2 {
-    font-family: Avenir Next, sans-serif;
-    font-size: 1.5em
-}
-
-.markup-box h3 {
-    font-family: Avenir Next, sans-serif;
-    font-size: 1.17em;
 }
 
 /* SHINE HOVER EFFECTS */
