@@ -187,23 +187,13 @@ footer {
 
 .wave h2:nth-child(1) {
     color: transparent;
-    -webkit-text-stroke: 2.5px rgb(172, 140, 125);
+    -webkit-text-stroke: 2.5px rgb(255, 255, 255);
     transform: translate(0%, 100%);
-
-    animation-name: glow;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 .wave h2:nth-child(2) {
-    color: rgb(172, 140, 125);
+    color: rgb(255, 255, 255);
     animation: animate 3s ease-in-out infinite;
-}
-
-@keyframes glow {
-    from { text-shadow: 0px 0px 5px #fff, 0px 0px 5px rgb(172, 140, 125); }
-    to { text-shadow: 0px 0px 20px #fff, 0px 0px 2px rgb(172, 140, 125); }
 }
 
 @keyframes animate {
@@ -310,6 +300,7 @@ footer {
 }
 
 /* CUSTOM FONT STYLING */
+/* FONT CREDIT: https://marsnev.com/ */
 
 @font-face {
     font-family: 'LEMON MILK';
@@ -321,7 +312,7 @@ footer {
         url('../fonts/LEMONMILK-Bold.svg#LEMONMILK-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
-    font-display: swap;
+    /* font-display: swap; */
 }
 
 .hero h2 {
@@ -382,15 +373,15 @@ footer {
 
 /* CUSTOM LIST STYLES */
 
-.emoji li {
+.unicode li {
     list-style: none;
 }
 
-.emoji li::before {
-    content: '\21BA';
+.unicode li::before {
+    content: '\21AA';
     margin-right: .35em;
     margin-left: -2em;
-    padding: .2em .2em .15em .15em;
+    padding: .1em .15em;
     display: inline-block;
 }
 
