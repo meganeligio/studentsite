@@ -127,11 +127,6 @@ footer {
 .hero h2 {
     font-family: LEMON MILK, Avenir Next;
     font-size: 5em;
-    color: rgb(230 97 92);
-    -webkit-text-stroke: 3px rgb(255 255 255);
-    text-shadow:
-    0 0 20px rgb(255 255 255),
-    0 0 10px rgb(199 62 62);
     line-height: 1.2;
     text-transform: uppercase;
     margin: 0 auto;
@@ -139,10 +134,19 @@ footer {
 
 .hero p {
     color: rgb(255 255 255);
-    max-width: 43em;
+    max-width: 41em;
     text-align: left;
     text-transform: lowercase;
     /* margin: 1em auto; */
+}
+
+.fade-in p {
+    animation: fadeIn ease-in 1.2s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 /* COURSES SECTION */
@@ -223,6 +227,84 @@ footer {
     to { -webkit-mask-position: -50%; }
 }
 
+/* SHIMMER EFFECT */
+
+.shimmer h2 {
+    -webkit-text-stroke: 3px rgb(255 255 255);
+    text-shadow: 0 0 20px rgb(255 255 255 / .1);
+    overflow: hidden;
+    background: linear-gradient(
+        90deg,
+        rgb(230 97 92 / .8), 
+        rgb(199 62 62 / .8),
+        rgb(152 188 198),
+        rgb(255 255 255 / .6)
+    );
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgb(255 255 255 / 0);
+}
+
+@keyframes animate {
+    0% { background-position: -200%; }
+    100% { background-position: 200%; }
+}
+
+/* CUSTOM FONT STYLING */
+/* FONT CREDIT: https://marsnev.com/ */
+
+@font-face {
+    font-family: 'LEMON MILK';
+    src: url('../fonts/LEMONMILK-Bold.eot');
+    src: url('../fonts/LEMONMILK-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LEMONMILK-Bold.woff2') format('woff2'),
+        url('../fonts/LEMONMILK-Bold.woff') format('woff'),
+        url('../fonts/LEMONMILK-Bold.ttf') format('truetype'),
+        url('../fonts/LEMONMILK-Bold.svg#LEMONMILK-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.courses h3,
+.project h3,
+.two-col-sidebar h3 {
+    font-family: LEMON MILK, Avenir Next;
+    font-size: 100%;
+}
+
+.primary h2 {
+    font-family: LEMON MILK, Avenir Next;
+}
+
+.markup-box h2 {
+    font-family: Avenir Next, sans-serif;
+    font-size: 1.5em
+}
+
+.markup-box h3 {
+    font-family: Avenir Next, sans-serif;
+    font-size: 1.17em;
+}
+
+/* CUSTOM LIST STYLES */
+
+.unicode li {
+    list-style: none;
+}
+
+.unicode li::before {
+    content: '\275D';
+    margin-right: .35em;
+    margin-left: -2em;
+    padding: .2em;
+    display: inline-block;
+}
+
+ul.a {
+    list-style: none;
+}
+
 /* ICON STYLING */
 
 .icons ul {
@@ -292,60 +374,6 @@ footer {
 
 .icons li:hover::after {
     left: 50%;
-}
-
-/* CUSTOM FONT STYLING */
-/* FONT CREDIT: https://marsnev.com/ */
-
-@font-face {
-    font-family: 'LEMON MILK';
-    src: url('../fonts/LEMONMILK-Bold.eot');
-    src: url('../fonts/LEMONMILK-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/LEMONMILK-Bold.woff2') format('woff2'),
-        url('../fonts/LEMONMILK-Bold.woff') format('woff'),
-        url('../fonts/LEMONMILK-Bold.ttf') format('truetype'),
-        url('../fonts/LEMONMILK-Bold.svg#LEMONMILK-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-.courses h3,
-.project h3,
-.two-col-sidebar h3 {
-    font-family: LEMON MILK, Avenir Next;
-    font-size: 100%;
-}
-
-.primary h2 {
-    font-family: LEMON MILK, Avenir Next;
-}
-
-.markup-box h2 {
-    font-family: Avenir Next, sans-serif;
-    font-size: 1.5em
-}
-
-.markup-box h3 {
-    font-family: Avenir Next, sans-serif;
-    font-size: 1.17em;
-}
-
-/* CUSTOM LIST STYLES */
-
-.unicode li {
-    list-style: none;
-}
-
-.unicode li::before {
-    content: '\275D';
-    margin-right: .35em;
-    margin-left: -2em;
-    padding: .2em;
-    display: inline-block;
-}
-
-ul.a {
-    list-style: none;
 }
 
 /* COURSE PAGES */
