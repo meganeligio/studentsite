@@ -79,11 +79,31 @@ h6 {
     line-height: 1.5;
 }
 
+.gradient {
+    background-size: 100%;
+    background-repeat: repeat;
+    background-image: linear-gradient(
+        90deg, 
+        #919cbe, 
+        #be6457
+        );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* PARAGRAPHS */
 
 p {
     margin: .5em 0;
     max-width: 38em;
+}
+
+.blue {
+    color:rgb(145 156 190);
+}
+
+.categories {
+    text-align: center;
 }
 
 /* LINKS */
@@ -108,12 +128,11 @@ img {
 /* BUTTONS */
 
 .button,
-button,
-form input[type="submit"] {
+button {
     font-size: inherit;
     line-height: 1;
     background-color: rgb(199 62 62);
-    border: 2px solid rgb(199 62 62);
+    /* border: 2px solid rgb(190 100 87); */
     color: rgb(255 255 255 / 1);
     padding: 1em;
     display: inline-block;
@@ -123,8 +142,7 @@ form input[type="submit"] {
 }
 
 .button:hover,
-button:hover,
-form input[type="submit"]:hover {
+button:hover {
     background-color: rgb(146 34 34);
     border-color: rgb(146 34 34);
     color: rgb(255 255 255 / 1);
@@ -231,6 +249,19 @@ form input[type="submit"]:hover {
 
 .site-header {
     padding: 1em 0;
+    background: rgb(145 156 190);
+}
+
+/* SITE FOOTER */
+
+#policies {
+    background: rgb(190 100 87);
+    color: rgb(255 255 255 / 1);
+}
+
+.site-footer {
+    padding: 1em 0;
+    background: rgb(190 100 87);
 }
 
 /* ON LARGER SCREENS PLACE LOGO LEFT AND NAV RIGHT */
@@ -259,7 +290,7 @@ form input[type="submit"]:hover {
 .site-id h1 {
     font-size: 1.5em;
     margin: 0;
-    padding-top: .6em;
+    padding-top: .1em;
     text-align: center;
 }
 
@@ -276,6 +307,7 @@ form input[type="submit"]:hover {
 .site-nav a {
     display: block;
     padding: 1em;
+    color: rgb(255 255 255 / 1);
 }
 
 .site-nav .menu-button {
@@ -533,7 +565,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-    margin-top: 1.5em;
+    mar gin-top: 1.5em;
     width: auto;
 } */
 
@@ -560,10 +592,6 @@ form input[type="submit"] {
 
 .site-header.sticky + main {
     padding-top: 3em;
-}
-
-.site-header {
-    background: rgb(0 0 0 / .2);
 }
 
 /* VERTICAL MEDIA QUERY */
