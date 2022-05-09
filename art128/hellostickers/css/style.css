@@ -563,7 +563,7 @@ button:hover {
 }
 
 .site-footer {
-    padding: 1em 0;
+    /* padding: 1em 0; */
     margin: .5em;
     background-color: rgb(190 100 87);
     border-radius: 10px;
