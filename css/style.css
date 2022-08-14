@@ -309,6 +309,10 @@ ul.a {
     list-style: none;
 }
 
+.list-assignments li {
+    color: rgb(0 0 0 / .6);
+}
+
 /* ICON STYLING */
 
 .icons ul {
