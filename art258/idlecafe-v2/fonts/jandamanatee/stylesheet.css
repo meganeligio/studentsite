@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Janda Manatee Solid';
+    src: url('JandaManateeSolid.eot');
+    src: url('JandaManateeSolid.eot?#iefix') format('embedded-opentype'),
+        url('JandaManateeSolid.woff2') format('woff2'),
+        url('JandaManateeSolid.woff') format('woff'),
+        url('JandaManateeSolid.ttf') format('truetype'),
+        url('JandaManateeSolid.svg#JandaManateeSolid') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
