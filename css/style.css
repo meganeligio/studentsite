@@ -191,7 +191,7 @@ footer {
 
 /* CUSTOM STYLING */
 
-.page-sub .hero {
+/* .page-sub .hero {
     background-image: url('../img/aes.gif');
     background-size: cover;
     background-position: center;
@@ -203,9 +203,9 @@ footer {
     background-color: rgb(152 188 198 / .4);
     position: absolute;
     width: 100%;
-}
+} */
 
-/* .page-home .hero {
+.page-home .hero {
     background-image: url('../img/aes.gif');
     background-size: cover;
     background-position: center;
@@ -216,7 +216,7 @@ footer {
     background-color: rgb(152 188 198 / .4);
     position: absolute;
     width: 100%;
-} */
+}
 
 /* SHINE HOVER EFFECTS */
 
