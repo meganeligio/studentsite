@@ -1,11 +1,24 @@
 /* GLOBAL RESET */
-* { box-sizing: border-box; }
-body { margin: 0; }
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
 
 /* GLOBAL COLORS */
-body { color: rgb(10 10 10); }
-a { color: rgb(0 0 0 / 0.904); }
-a:hover { color: rgb(199 62 62); }
+body {
+    color: rgb(10 10 10);
+}
+
+a {
+    color: rgb(0 0 0 / 0.904);
+}
+
+a:hover {
+    color: rgb(199 62 62);
+}
 
 /* GLOBAL TYPOGRAPHY */
 
@@ -26,11 +39,15 @@ h1 {
 
 body {
     font-family: Avenir Next, sans-serif;
-    font-size: 85.75%; /* 14px */
+    font-size: 85.75%;
+    /* 14px */
     line-height: 1.4;
 }
 
-a, a:hover, a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
     text-decoration: none;
 }
 
@@ -145,8 +162,13 @@ footer {
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* COURSES SECTION */
@@ -170,7 +192,7 @@ footer {
 /* CUSTOM STYLING */
 
 .page-sub .hero {
-    background-image: url('../img/self-portrait.jpg');
+    background-image: url('../img/aes.gif');
     background-size: cover;
     background-position: center;
     padding: 20vh 1em;
@@ -202,16 +224,14 @@ footer {
     font-family: LEMON MILK, Avenir Next;
     font-size: medium;
     background-color: rgb(255 255 255);
-    background-image: linear-gradient(
-        -75deg,
-        transparent 0,
-        transparent 5%,
-        rgb(230 97 92 / .6) 20%,
-        rgb(230 97 92) 20%,
-        rgb(255 255 255 / .6) 55%,
-        transparent 20%,
-        transparent 100%
-        );
+    background-image: linear-gradient(-75deg,
+            transparent 0,
+            transparent 5%,
+            rgb(230 97 92 / .6) 20%,
+            rgb(230 97 92) 20%,
+            rgb(255 255 255 / .6) 55%,
+            transparent 20%,
+            transparent 100%);
     background-size: 200% 100%;
     text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
@@ -225,8 +245,13 @@ footer {
 }
 
 @keyframes shine {
-    from { -webkit-mask-position: 100%; }
-    to { -webkit-mask-position: -50%; }
+    from {
+        -webkit-mask-position: 100%;
+    }
+
+    to {
+        -webkit-mask-position: -50%;
+    }
 }
 
 /* SHIMMER EFFECT */
@@ -235,13 +260,11 @@ footer {
     -webkit-text-stroke: 3px rgb(255 255 255);
     text-shadow: 0 0 20px rgb(255 255 255 / .1);
     overflow: hidden;
-    background: linear-gradient(
-        90deg,
-        rgb(230 97 92 / .8), 
-        rgb(199 62 62 / .8),
-        rgb(152 188 198),
-        rgb(255 255 255 / .6)
-    );
+    background: linear-gradient(90deg,
+            rgb(230 97 92 / .8),
+            rgb(199 62 62 / .8),
+            rgb(152 188 198),
+            rgb(255 255 255 / .6));
     background-size: 80%;
     animation: animate 3s linear infinite;
     background-clip: text;
@@ -251,8 +274,13 @@ footer {
 }
 
 @keyframes animate {
-    0% { background-position: -200%; }
-    100% { background-position: 200%; }
+    0% {
+        background-position: -200%;
+    }
+
+    100% {
+        background-position: 200%;
+    }
 }
 
 /* CUSTOM FONT STYLING */
@@ -419,6 +447,7 @@ aside {
         display: grid;
         grid-template-columns: 20em auto;
     }
+
     .two-col-sidebar aside {
         border-right: 1px solid rgb(0 0 0 / 0.1);
         margin: 0 3em 2em 0;
@@ -452,6 +481,7 @@ dt {
     font-weight: bold;
     margin-top: 1em;
 }
+
 dd {
     margin: 0;
 }
