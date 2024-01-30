@@ -67,11 +67,10 @@ header a {
 /* HERO */
 
 .hero { 
-    /* background-image: url(img/self-portrait.jpg); */
     background-size: cover;
     background-position: center;
     padding: 29.5vh 2em;
-    background-color: rgb(248 220 232 / 1);
+    background-color: rgb(233 243 208);
 }
 
 .hero h2 {
@@ -94,6 +93,10 @@ header a {
 
 
 /* ABOUT */
+
+.portrait {
+    background-image: url(img/self-portrait.jpg);
+}
 
 
 /* ARCHIVE */
