@@ -49,72 +49,74 @@
 
     </header>
 
-<main>
+    <main>
 
-    <section class="hero portrait">
+        <section class="hero portrait">
 
-        <div class="swiper mySwiper">
+            <div class="swiper mySwiper">
 
-            <div class="swiper-wrapper">
+                <div class="swiper-wrapper">
 
-                <div class="swiper-slide">
+                    <div class="swiper-slide about-hero">
 
-                    <div class="twoup">
+                        <div class="twoup">
 
-                        <div class="imagebox">
+                            <div class="imagebox">
 
-                            <img src="img/self-portrait.png" widith="900" height="540" alt="illustrated self portrait">
-                        
-                        </div>
+                                <img src="img/self-portrait.png" widith="900" height="540"
+                                    alt="illustrated self portrait">
 
-                        <div class="textbox">
+                            </div>
 
-                            <h2>hi, i'm megan&nbsp!!</h2>
+                            <div class="textbox">
 
-                            <p>
-                                i'm an aspiring graphic artist from Honolulu, Hawaii who loves doing illustrations and
-                                UX/UI designs.
-                                i've always been passionate about art. i'm striving to perfect my design skills as a
-                                professional.
-                            </p>
+                                <h2>hi, i'm megan&nbsp!!</h2>
 
-                            <p>
-                                <b>occupation: college student</b>
-                            </p>
+                                <p>
+                                    i'm an aspiring graphic artist from Honolulu, Hawaii who loves doing illustrations
+                                    and
+                                    UX/UI designs.
+                                    i've always been passionate about art. i'm striving to perfect my design skills as a
+                                    professional.
+                                </p>
+
+                                <p>
+                                    <b>occupation: college student</b>
+                                </p>
+
+                            </div>
 
                         </div>
 
                     </div>
 
+                    <div class="swiper-slide">
+
+                        <h2 class="h2-watching">currently watching</h2>
+
+                    </div>
+
                 </div>
 
-                <div class="swiper-slide">
-
-                    <h2 class="h2-watching">currently watching</h2>
-
-                </div>
+                <div class="swiper-pagination"></div>
 
             </div>
 
-            <div class="swiper-pagination"></div>
+        </section>
 
-        </div>
+    </main>
 
-    </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-</main>
-
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        pagination: {
-            el: ".swiper-pagination",
-            dynamicBullets: true,
-        },
-    });
-</script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
 
 </body>
 
