@@ -1,16 +1,19 @@
 /* VARIABLES */
 
 html {
-    --color-background: rgb(233 243 208);
-    --color-body: rgb(235 135 171 / 1);
-}
+    --color-background: rgb(225 252 213);
+    --color-body: rgb(0 0 0 / .8);
+    --dark-green: rgb(61 178 7);
+  }
 
 /* GLOBALS */
 
 body {
     margin: 0;
-    background-color: var(--color-body);
-}
+    font-family: "poppins", Arial, Helvetica, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-body);
+  }
 
 /* FONTS */
 
@@ -40,7 +43,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: rgb(255 255 255 / 1);
+    color: var(--dark-green);
 }
 
 
@@ -101,7 +104,51 @@ header a {
     color: rgb(0 0 0 / 1);
 }
 
+
 /* WORK */
+
+/* POLAROIDS */
+
+.desk {
+    width: 110vw;
+    height: 110vh;
+    background-size: cover;
+    overflow: hidden;
+    position: fixed;
+    transition: filter .2s ease;
+  }
+  
+  .photos {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .drag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+  
+  figure {
+    margin: 0;
+    padding: .6em;
+    color: rgb(235 135 171);
+    background: rgb(255 226 237);
+    width: 10em;
+    box-shadow: 0 0 4vmin rgba(0 0 0 /.75);
+    font-size: 1em;
+    position: absolute;
+    transition: box-shadow .2s ease, filter .2s ease;
+    
+    figcaption {
+      text-align: center;
+      pointer-events: none;
+    }
+  }
 
 
 /* ABOUT */
@@ -112,7 +159,7 @@ header a {
     font-style: italic;
     margin: 0 auto;
     text-align: center;
-    color: rgb(61 178 7 / 1);
+    color: var(--dark-green);
 }
 
 /* .portrait {
@@ -146,14 +193,14 @@ header a {
     font-family: "droid-serif", Georgia, 'Times New Roman', Times, serif;
     font-size: 4em;
     font-style: italic;
-    padding-top: 2em;
+    padding-top: 1em;
     margin: 0 auto;
     text-align: center;
     color: rgb(61 178 7 / 1);
 }
 
 .about-hero {
-    padding-bottom: 30em;
+    /* padding-bottom: 30em; */
 }
 
 .green {
@@ -183,6 +230,6 @@ header a {
 
 @media (min-width: 768px) {
     .about-hero {
-        padding-bottom: 18em;
+        /* padding-bottom: 18em; */
     }
 }

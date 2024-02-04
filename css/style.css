@@ -204,6 +204,19 @@ footer {
     width: 100%;
 }
 
+.page-sub .hero {
+    background-image: url('../img/aes.gif');
+    background-size: cover;
+    background-position: center;
+    padding: 25vh 1em;
+}
+
+.page-sub header {
+    background-color: rgb(152 188 198 / .4);
+    position: absolute;
+    width: 100%;
+}
+
 /* SHINE HOVER EFFECTS */
 
 .shine li {
