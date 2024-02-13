@@ -78,7 +78,7 @@
 
     <main>
 
-        <section class="hero">
+        <section>
 
             <div class="desk"></div>
 
@@ -86,8 +86,9 @@
 
                 <div class="drag" data-i="0">
 
-                    <figure class="spin"><a href="idlecafe/index.html"><img src="https://picsum.photos/400?image=350" alt="Photo by Forrest Cavale"
-                            onerror="this.parentElement.parentElement.style.display = 'none';"></a>
+                    <figure class="spin"><a href="idlecafe/index.html"><img src="https://picsum.photos/400?image=350"
+                                alt="Photo by Forrest Cavale"
+                                onerror="this.parentElement.parentElement.style.display = 'none';"></a>
 
                         <figcaption>idle cafe</figcaption>
 
@@ -97,8 +98,9 @@
 
                 <div class="drag" data-i="1">
 
-                    <figure class="spin"><a href=""><img src="https://picsum.photos/400?image=374" alt="Photo by Ma. Alejandra"
-                            onerror="this.parentElement.parentElement.style.display = 'none';"></a>
+                    <figure class="spin"><a href=""><img src="https://picsum.photos/400?image=374"
+                                alt="Photo by Ma. Alejandra"
+                                onerror="this.parentElement.parentElement.style.display = 'none';"></a>
 
                         <figcaption>haikyuu!!</figcaption>
 
@@ -108,8 +110,9 @@
 
                 <div class="drag" data-i="2">
 
-                    <figure class="spin"><a href="#"><img src="https://picsum.photos/400?image=472" alt="Photo by Dustin Scarpitti"
-                            onerror="this.parentElement.parentElement.style.display = 'none';"></a>
+                    <figure class="spin"><a href="#"><img src="https://picsum.photos/400?image=472"
+                                alt="Photo by Dustin Scarpitti"
+                                onerror="this.parentElement.parentElement.style.display = 'none';"></a>
 
                         <figcaption>hello stickers</figcaption>
 
@@ -119,8 +122,9 @@
 
                 <div class="drag" data-i="3">
 
-                    <figure class="spin"><a href="#"><img src="https://picsum.photos/400?image=326" alt="Photo by Dominik Martin"
-                            onerror="this.parentElement.parentElement.style.display = 'none';"></a>
+                    <figure class="spin"><a href="#"><img src="https://picsum.photos/400?image=326"
+                                alt="Photo by Dominik Martin"
+                                onerror="this.parentElement.parentElement.style.display = 'none';"></a>
 
                         <figcaption>ani blitz!</figcaption>
 
@@ -130,8 +134,9 @@
 
                 <div class="drag" data-i="4">
 
-                    <figure class="spin"><a href="#"><img src="https://picsum.photos/400?image=49" alt="Photo by Margaret Barley"
-                            onerror="this.parentElement.parentElement.style.display = 'none';"></a>
+                    <figure class="spin"><a href="#"><img src="https://picsum.photos/400?image=49"
+                                alt="Photo by Margaret Barley"
+                                onerror="this.parentElement.parentElement.style.display = 'none';"></a>
 
                         <figcaption>waikiki aquarium</figcaption>
 
@@ -156,6 +161,12 @@
         </section>
 
     </main>
+
+    <footer class="site-footer">
+
+        [ footer ]
+
+    </footer>
 
     <!-- SCRIPT JS -->
 
@@ -252,6 +263,21 @@
         function getRandomInt(min, max) {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
+
+        // function hideall() {
+        //     console.log('hello')
+        //     $('.drag.active').removeClass('active');
+        // };
+
+        $('.desk').click(function () {
+            console.log('heyyy');
+            TweenLite.to($('.drag.active'), .2, {
+                scaleX: 1,
+                scaleY: 1
+            });
+            $('.drag.active').removeClass('active');
+            scatterPhotos();
+        });
     </script>
 
 </body>
